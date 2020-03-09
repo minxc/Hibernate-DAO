@@ -1,9 +1,5 @@
 package com.github.yanghf2000.bridge;
 
-import java.math.BigDecimal;
-import java.util.Map;
-import java.util.Objects;
-
 import org.apache.lucene.document.Document;
 import org.hibernate.search.bridge.LuceneOptions;
 import org.hibernate.search.bridge.MetadataProvidingFieldBridge;
@@ -11,6 +7,10 @@ import org.hibernate.search.bridge.ParameterizedBridge;
 import org.hibernate.search.bridge.TwoWayFieldBridge;
 import org.hibernate.search.bridge.spi.FieldMetadataBuilder;
 import org.hibernate.search.bridge.spi.FieldType;
+
+import java.math.BigDecimal;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * 对于默认的数字搜索，是不包含BigDecimal类型的，则可以使用这个<br>
